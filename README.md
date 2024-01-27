@@ -46,3 +46,18 @@ bevformer
 |   |   ├── nuscenes_infos_temporal_train.pkl
 |   |   ├── nuscenes_infos_temporal_val.pkl
 ```
+
+# Bev toolbox
+```bash
+conda create -n bev-toolbox python=3.8 -y
+conda activate bev-toolbox
+```
+
+```bash
+pip install numpy opencv-python
+pip install bev-toolbox
+```
+
+```
+git clone https://github.com/OpenDriveLab/Birds-eye-view-Perception
+```
