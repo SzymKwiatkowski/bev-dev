@@ -1,7 +1,7 @@
 __pycache__
 .vscode/
 Birds-eye-view-Perception/
-# mmdetection3d/
+mmdetection3d/
 FB-BEV/
 neat/
 preds/
