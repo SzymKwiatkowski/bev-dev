@@ -1,8 +1,22 @@
 # Setup MMlab
+Initial installation was made on ubuntu 22.04 jammy in which case cuda in version 12.1 should be default driver. If not install nvidia toolkit in version 12.1.
+```bash
+sudo apt install cuda-12-1
+```
+expected output:
+```bash
+Cuda compilation tools, release 12.1, V12.1.105
+Build cuda_12.1.r12.1/compiler.32688072_0
+```
+Then setup conda environment for your cuda drivers:
 ```bash
 conda create --name openmmlab python=3.8 -y
 source activate openmmlab
-conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia # Only forcuda 12.1 support for different check pytorch
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia # Only for cuda 12.1 support for different check pytorch
+```
+or for cuda 11.8
+```bash
+conda install pytorch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 pytorch-cuda=11.8 -c pytorch -c nvidia
 ```
 
 ```bash
